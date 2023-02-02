@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -15,12 +17,9 @@ body {
 
 body {
   font: 16px "Tajawal", Helvetica, Arial, sans-serif;
-  background: linear-gradient(to left top, #302d2b, #474740);
-  color: white;
-}
-
-header {
-  min-height: 100vh;
+  line-height: 1.5;
+  background: rgb(255, 255, 255);
+  color: black;
 }
 
 nav {
@@ -29,31 +28,88 @@ nav {
   padding: 20px 60px;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .links {
   display: flex;
+  align-items: center;
   gap: 5rem;
 }
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: black;
   font-weight: 500;
 }
 
 a:hover,
 a:active {
-  color: #ada6a6;
+  color: #e43d45;
 }
 
-#skills,
-#work,
-#about,
-#contact {
+button {
+  font: 16px "Tajawal", Helvetica, Arial, sans-serif;
+  background: none;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  padding: 6px 18px;
+}
+
+button:hover {
+  border: 2px solid #e43d45;
+  background: #e43d4523;
+  color: #e43d45;
+  cursor: pointer;
+}
+
+section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-block: 2rem;
+}
+
+.wrapper {
+  max-width: 50rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#home {
+  background-image: linear-gradient(to right, #f57b7b, #fff8b6);
+  clip-path: polygon(0 10%, 100% 20%, 100% 95%, 0 85%);
+}
+
+#home > .wrapper {
+  max-width: 80%;
+  border-left: 4px solid #fffacb;
+  padding-left: 100px;
+}
+
+.hello {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+#meghan {
+  font-size: 7rem;
+  letter-spacing: 10px;
+  text-transform: lowercase;
+  margin: 0;
+  color: #ffffff;
+}
+
+span {
+  opacity: 0;
+  transition: all 5s ease;
+}
+
+span.fade {
+  opacity: 1;
 }
