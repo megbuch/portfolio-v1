@@ -76,7 +76,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-block: 2rem;
 }
 
 .wrapper {
@@ -129,7 +128,7 @@ h3 {
 
 span {
   opacity: 0;
-  transition: all 5s ease;
+  transition: all 4s ease;
 }
 
 span.fade {
@@ -147,7 +146,7 @@ span.fade {
 }
 
 #about {
-  margin: 20em auto;
+  margin: 0 auto;
 }
 
 .row,
@@ -171,6 +170,17 @@ span.fade {
 #contact {
   background-image: linear-gradient(210deg, #f57b7b, #fff8b6);
   clip-path: polygon(0 10%, 100% 5%, 100% 90%, 0 95%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+ul {
+  width: 50%;
+  list-style: none;
 }
 
 @media only screen and (max-width: 1200px) {
