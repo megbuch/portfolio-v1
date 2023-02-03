@@ -17,7 +17,7 @@ body {
 
 body {
   font: 16px "Tajawal", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.7;
   background: rgb(255, 255, 255);
   color: black;
 }
@@ -39,37 +39,43 @@ nav {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #e43d45;
   font-weight: 500;
 }
 
-a:hover,
-a:active {
-  color: #e43d45;
+a:hover {
+  color: black;
 }
 
 button {
   font: 16px "Tajawal", Helvetica, Arial, sans-serif;
-  background: none;
-  color: #000000;
-  border: 2px solid #000000;
+  font-weight: 500;
+  background: #e43d4536;
+  color: #e43d45;
+  border: 2px solid #e43d45;
   border-radius: 8px;
   padding: 6px 18px;
 }
 
 button:hover {
-  border: 2px solid #e43d45;
-  background: #e43d4523;
-  color: #e43d45;
+  border: 2px solid black;
+  background: rgba(0, 0, 0, 0.171);
+  color: black;
   cursor: pointer;
 }
 
+#main {
+  font-size: 20px;
+  padding: 15px 38px;
+  letter-spacing: 2px;
+  margin-top: 2em;
+}
+
 section {
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding-block: 2rem;
 }
 
@@ -83,23 +89,42 @@ section {
   align-items: center;
 }
 
+.small-wrapper {
+  max-width: 50%;
+  margin-inline: auto;
+}
+
 #home {
   background-image: linear-gradient(to right, #f57b7b, #fff8b6);
   clip-path: polygon(0 10%, 100% 20%, 100% 95%, 0 85%);
+  text-align: left;
+  margin-bottom: 5em;
+  padding-top: 7em;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0;
+  color: white;
+}
+
+h1 {
+  font-size: 5rem;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  margin: 0;
+  color: #ffffff;
+}
+
+h2 {
+  font-weight: 400;
   text-align: center;
 }
 
-.hello {
-  font-size: 1.1rem;
-  margin: 0;
-}
-
-#meghan {
-  font-size: 9rem;
-  letter-spacing: 10px;
-  text-transform: lowercase;
-  margin: 0;
-  color: #ffffff;
+h3 {
+  color: #e43d45;
 }
 
 span {
@@ -112,13 +137,53 @@ span.fade {
 }
 
 .mockup {
-  max-width: 60em;
+  max-width: 50%;
 }
 
 .project-element {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin: 8em 0 8em 0;
+}
+
+#about {
+  margin: 20em auto;
+}
+
+.row,
+.row-reverse {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+#headshot {
+  max-height: 15em;
+  border-radius: 50%;
+}
+
+#contact {
+  background-image: linear-gradient(210deg, #f57b7b, #fff8b6);
+  clip-path: polygon(0 10%, 100% 5%, 100% 90%, 0 95%);
+}
+
+@media only screen and (max-width: 1200px) {
+  .row,
+  .row-reverse {
+    flex-direction: column;
+  }
+
+  .mockup {
+    max-width: 90%;
+  }
+
+  #meghan {
+    font-size: 5rem;
+  }
 }
