@@ -74,22 +74,19 @@ section {
 }
 
 .wrapper {
-  max-width: 50rem;
+  max-width: 80%;
   margin-inline: auto;
   padding-inline: 1.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #home {
   background-image: linear-gradient(to right, #f57b7b, #fff8b6);
   clip-path: polygon(0 10%, 100% 20%, 100% 95%, 0 85%);
-}
-
-#home > .wrapper {
-  max-width: 80%;
-  border-left: 4px solid #fffacb;
-  padding-left: 100px;
+  text-align: center;
 }
 
 .hello {
@@ -98,7 +95,7 @@ section {
 }
 
 #meghan {
-  font-size: 7rem;
+  font-size: 9rem;
   letter-spacing: 10px;
   text-transform: lowercase;
   margin: 0;
@@ -112,4 +109,16 @@ span {
 
 span.fade {
   opacity: 1;
+}
+
+.mockup {
+  max-width: 60em;
+}
+
+.project-element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 8em 0 8em 0;
 }
