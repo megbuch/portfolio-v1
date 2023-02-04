@@ -73,10 +73,11 @@ button:hover {
 }
 
 section {
-  min-height: 95vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 2em 0 0 0;
 }
 
 .wrapper {
@@ -92,6 +93,10 @@ section {
 .small-wrapper {
   max-width: 50%;
   margin-inline: auto;
+  border: 2px solid #e43d45;
+  border-radius: 15px;
+  padding: 3em 10em;
+  background: white;
 }
 
 #home {
@@ -120,7 +125,9 @@ h1 {
 
 h2 {
   font-weight: 400;
+  font-size: 2rem;
   text-align: center;
+  margin: 0;
 }
 
 h3 {
@@ -176,14 +183,13 @@ span.fade {
   flex-direction: row-reverse;
 }
 
+#contact {
+  background: #e43d45;
+}
+
 #headshot {
   max-height: 12em;
   border-radius: 50%;
-}
-
-#contact {
-  background-image: linear-gradient(210deg, #f57b7b, #fff8b6);
-  clip-path: polygon(0 10%, 100% 5%, 100% 90%, 0 95%);
 }
 
 form {
