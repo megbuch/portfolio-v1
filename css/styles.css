@@ -34,6 +34,7 @@ nav {
 .links {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5rem;
 }
 
@@ -67,12 +68,12 @@ button:hover {
 }
 
 section {
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2em 0 2em 0;
+  padding: 2em 0 0 0;
 }
 
 .wrapper {
@@ -86,11 +87,11 @@ section {
 }
 
 .small-wrapper {
-  max-width: 60%;
+  width: 50em;
   margin-inline: auto;
   border: 2px solid #e43d45;
   border-radius: 15px;
-  padding: 3em 10em;
+  padding: 2em;
   background: rgba(255, 255, 255, 0.877);
 }
 
@@ -105,8 +106,8 @@ section {
   background-size: cover;
   clip-path: polygon(0 10%, 100% 20%, 100% 95%, 0 85%);
   text-align: center;
-  margin-bottom: 5em;
   padding-top: 7em;
+  margin-bottom: 2em;
 }
 
 .title {
@@ -190,6 +191,7 @@ span.fade {
     url("../assets/images/sphere.jpg");
   background-position: top;
   background-size: cover;
+  text-align: center;
 }
 
 #headshot {
@@ -200,10 +202,28 @@ span.fade {
 form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  gap: 3px;
+}
+
+label {
+  text-align: left;
+}
+
+input[type="text"],
+textarea {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Tajawal", Helvetica, Arial, sans-serif;
+}
+
+textarea {
+  resize: none;
 }
 
 #submit {
+  margin: 1.5em 0 1.5em 0;
   background-color: #e43d45;
   color: white;
 }
@@ -212,9 +232,17 @@ form {
   background-color: #c41d25;
 }
 
-ul {
-  width: 50%;
-  list-style: none;
+#email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+footer > p > a {
+  margin-top: 2em;
+  color: white;
+  font-size: 15px;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -231,7 +259,7 @@ ul {
 
   .small-wrapper {
     max-width: 90%;
-    padding-inline: 1rem;
+    padding: 2em;
   }
 
   .mockup {
