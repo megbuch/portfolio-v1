@@ -50,19 +50,16 @@ a:hover {
 button {
   font: 16px "Tajawal", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  background: #e43d4536;
+  background: #ffffffad;
   color: #e43d45;
-  border: 2px solid #e43d45;
+  border: 2px solid #ffffff;
   border-radius: 8px;
   padding: 6px 18px;
   cursor: pointer;
 }
 
 button:hover {
-  border: 2px solid black;
-  background: rgba(0, 0, 0, 0.171);
-  color: black;
-  cursor: pointer;
+  background: rgba(255, 255, 255, 0.856);
 }
 
 #main-btn {
@@ -96,11 +93,18 @@ section {
   border: 2px solid #e43d45;
   border-radius: 15px;
   padding: 3em 10em;
-  background: white;
+  background: rgba(255, 255, 255, 0.877);
 }
 
 #home {
-  background-image: linear-gradient(to right, #f57b7b, #fff8b6);
+  background-image: linear-gradient(
+      to right,
+      rgba(216, 25, 0, 0.726),
+      rgba(245, 144, 152, 0.774)
+    ),
+    url("../assets/images/d20.jpg");
+  background-position: top;
+  background-size: cover;
   clip-path: polygon(0 10%, 100% 20%, 100% 95%, 0 85%);
   text-align: left;
   margin-bottom: 5em;
@@ -184,7 +188,14 @@ span.fade {
 }
 
 #contact {
-  background: #e43d45;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 39, 10, 0.671),
+      rgba(245, 144, 153, 0.603)
+    ),
+    url("../assets/images/sphere.jpg");
+  background-position: top;
+  background-size: cover;
 }
 
 #headshot {
