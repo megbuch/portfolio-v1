@@ -1,6 +1,9 @@
 const nameEl = document.getElementById("meghan");
 const strNameEl = nameEl.textContent;
 const splitNameEl = strNameEl.split("");
+const hiddenEls = document.querySelectorAll(".hidden");
+
+// animated text
 nameEl.textContent = "";
 
 for (let i = 0; i < splitNameEl.length; i++) {
@@ -24,3 +27,15 @@ function complete() {
   clearInterval(timer);
   timer = null;
 }
+
+// scroll animation
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+hiddenEls.forEach((el) => observer.observe(el));

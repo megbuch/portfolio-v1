@@ -27,6 +27,7 @@
         >
       </div>
     </nav>
+
     <section id="home">
       <div class="wrapper">
         <h1 id="meghan">Hello, I'm Meghan Bucher.</h1>
@@ -34,14 +35,14 @@
           I'm a full stack web developer & software engineer based in San
           Francisco.
         </h1>
-        <a href="#work"><button id="main">See My Work</button></a>
+        <a href="#work"><button id="main-btn">See My Work</button></a>
       </div>
     </section>
 
     <section id="work">
       <div class="wrapper">
         <h2>Featured Work</h2>
-        <div class="project-element row">
+        <div class="project-element row hidden">
           <img class="mockup" src="./assets/images/mockup_jobseekr.png" />
           <div>
             <h3>jobSeekr App</h3>
@@ -65,7 +66,7 @@
           </div>
         </div>
 
-        <div class="project-element row-reverse">
+        <div class="project-element row-reverse hidden">
           <img class="mockup" src="./assets/images/mockup_npcgen.png" />
           <div>
             <h3>D&D 5E NPC Generator</h3>
@@ -89,7 +90,7 @@
       </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="hidden">
       <div class="small-wrapper">
         <h2>About Me</h2>
         <div class="row">
@@ -107,7 +108,7 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="hidden">
       <div class="small-wrapper">
         <h2>Contact Me</h2>
         <p>
@@ -118,12 +119,17 @@
         </p>
         <div class="row">
           <form>
-            <label>Name: *</label>
+            <label>First Name *</label>
             <input type="text" />
-            <label>Email: *</label>
+            <label>Last Name *</label>
             <input type="text" />
-            <label>Message: *</label>
+            <label>Email *</label>
+            <input type="text" />
+            <label>Phone</label>
+            <input type="text" />
+            <label>Message *</label>
             <textarea rows="4" cols="50"></textarea>
+            <button type="submit">Send</button>
           </form>
           <ul>
             <li><b>Meghan Bucher</b></li>
@@ -132,7 +138,8 @@
               <a href="mailto: meg@meghanbucher.work">meg@meghanbucher.work</a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/meghanbucher/">LinkedIn</a> |
+              <a href="https://www.linkedin.com/in/meghanbucher/">LinkedIn</a>
+              |
               <a href="https://github.com/bardIRL">GitHub</a>
             </li>
           </ul>
