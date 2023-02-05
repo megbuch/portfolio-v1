@@ -21,7 +21,7 @@
   <body>
     
     <nav>
-      <a href="#top"><p>mb.</p></a>
+      <a href="https://meghanbucher.work/"><p>mb.</p></a>
       <div class="links">
         <a href="#top">Home</a>
         <a href="#work">Work</a>
@@ -91,7 +91,7 @@
 
     <section id="about" class="hidden">
       <div class="small-wrapper">
-        <h4>About Me</h4>
+        <h2>About Me</h2>
         <p>
           I'm a driven full stack developer with a passion for crafting elegant,
           impactful solutions. I aim to deliver
@@ -103,9 +103,9 @@
           innovative marketing solutions to every project.<br />
         </p>
         <button class="submit">
-          <a href="./assets/other/resume.pdf">View Resume</a>
+          <a target="_blank" href="./assets/other/resume.pdf">View Resume</a>
         </button>
-        <h4>Skills</h4>
+        <h2>Skills</h2>
         <div><b>Languages: </b>JavaScript, Python, HTML5, CSS3</div>
         <div><b>Libraries & Frameworks: </b>React, Express, Mongoose, Django, SASS</div>
         <div><b>Databases: </b>MongoDB, PostgreSQL</div>
@@ -121,17 +121,20 @@
           and get in touch with me!<br />
           <a href="mailto: meg@meghanbucher.work">meg@meghanbucher.work</a>
         </p>
-        <form>
+        <form action="https://formsubmit.co/meg@meghanbucher.work" method="POST">
+          <input type="hidden" name="_next" value="https://meghanbucher.work/thanks.html">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none">
           <label>First Name *</label>
-          <input type="text" />
+          <input type="text" name="firstName" required/>
           <label>Last Name *</label>
-          <input type="text" />
+          <input type="text" name="lastName" required/>
           <label>Email *</label>
-          <input type="text" />
+          <input type="email"  name="email" required/>
           <label>Phone</label>
-          <input type="text" />
+          <input type="text" name="phone"/>
           <label>Message *</label>
-          <textarea rows="6" cols="70"></textarea>
+          <textarea rows="6" cols="70" name="message" required></textarea>
           <button class="submit" type="submit">Send</button>
         </form>
         <div class="links">
@@ -140,10 +143,10 @@
             class="fa-regular fa-lg fa-envelope"
           ></a>
           <a
-            href="https://www.linkedin.com/in/meghanbucher/"
+            target="_blank" href="https://www.linkedin.com/in/meghanbucher/"
             class="fa fa-lg fa-linkedin"
           ></a>
-          <a href="https://github.com/bardIRL" class="fa fa-lg fa-github"></a>
+          <a target="_blank" href="https://github.com/bardIRL" class="fa fa-lg fa-github"></a>
         </div>
       </div>
       <footer>

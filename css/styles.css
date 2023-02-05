@@ -139,19 +139,12 @@ h1 {
 }
 
 h2 {
-  font-weight: 400;
   font-size: 2rem;
-  text-align: center;
   margin: 0;
 }
 
 h3 {
   color: #e43d45;
-}
-
-h4 {
-  font-size: 2rem;
-  margin: 0;
 }
 
 .accent {
@@ -246,6 +239,7 @@ label {
 }
 
 input[type="text"],
+input[type="email"],
 textarea {
   border: none;
   border-radius: 5px;
