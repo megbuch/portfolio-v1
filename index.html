@@ -30,16 +30,24 @@
     <script defer src="js/main.js"></script>
   </head>
   <body>
-    
     <nav>
-      <a href="https://meghanbucher.work/"><p>mb.</p></a>
-      <div class="links">
-        <a href="#top">Home</a>
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a target="_blank" href="./assets/other/resume.pdf">Resume</a>
-      </div>
+      <a href="https://meghanbucher.work/">mb.</a>
+      <ul class="links" id="primary-nav">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a target="_blank" href="./assets/other/resume.pdf">Resume</a></li>
+      </ul>
+      <i class="fa-solid fa-2xl fa-bars hamburger"></i>
+      <ul class="links hide" id="mobile-menu">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a target="_blank" href="./assets/other/resume.pdf">Resume</a></li>
+        <button class="fa-solid fa-xl fa-xmark mobile-nav-exit"></button>
+      </ul>
     </nav>
     <section id="home">
       <div class="wrapper">
@@ -48,7 +56,6 @@
         <a href="#work"><button>See My Work</button></a>
       </div>
     </section>
-
     <section id="work">
       <div class="wrapper">
         <h2>Featured Work</h2>
@@ -75,7 +82,6 @@
             >
           </div>
         </div>
-
         <div class="project-element row-reverse hidden">
           <img class="mockup" src="./assets/images/mockup_npcgen.png" />
           <div>
@@ -99,7 +105,6 @@
         </div>
       </div>
     </section>
-
     <section id="about" class="hidden">
       <div class="small-wrapper">
         <h2>About Me</h2>
@@ -123,7 +128,6 @@
         <div><b>Other: </b>Node.js, RESTful APIs, Git</div>
         <div><b>Design: </b>UX/UI, Figma, Adobe Photoshop</div>
     </section>
-
     <section id="contact">
       <div class="small-wrapper hidden"> 
         <h2>Contact</h2>

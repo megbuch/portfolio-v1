@@ -2,6 +2,9 @@ const nameEl = document.getElementById("meghan");
 const strNameEl = nameEl.textContent;
 const splitNameEl = strNameEl.split("");
 const hiddenEls = document.querySelectorAll(".hidden");
+const navExit = document.querySelector(".mobile-nav-exit");
+const navMenu = document.getElementById("mobile-menu");
+const hamburger = document.querySelector(".hamburger");
 
 // animated text
 nameEl.textContent = "";
@@ -39,3 +42,16 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 hiddenEls.forEach((el) => observer.observe(el));
+
+// mobile nav menu
+navExit.addEventListener("click", closeNav);
+hamburger.addEventListener("click", openNav);
+
+function closeNav() {
+  navMenu.classList.add("hide");
+}
+
+function openNav() {
+  navMenu.classList.remove("hide");
+}
+console.log(navMenu);

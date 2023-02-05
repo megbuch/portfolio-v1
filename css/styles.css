@@ -25,22 +25,34 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px;
+  padding: 10px 60px;
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
-nav > a > p {
+.mobile-nav-exit,
+.hamburger {
+  display: none;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+nav > a {
+  margin: 0;
   font-size: 30px;
   font-weight: 600;
   color: #e43d45e5;
   letter-spacing: -2px;
 }
 
-nav > a > p:hover {
+nav > a:hover {
   color: #e43d45;
 }
+
 .links {
   display: flex;
   align-items: center;
@@ -169,6 +181,10 @@ span.fade {
   transform: translateY(30%);
 }
 
+.hide {
+  display: none;
+}
+
 .show {
   opacity: 1;
   filter: blur(0);
@@ -275,6 +291,10 @@ footer > p > a {
 }
 
 @media only screen and (max-width: 1400px) {
+  .hamburger {
+    display: none;
+  }
+
   .row,
   .row-reverse {
     flex-direction: column;
@@ -302,7 +322,54 @@ footer > p > a {
 
 @media only screen and (max-width: 770px) {
   #meghan {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+
+  .title {
+    font-size: 0.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  #primary-nav {
+    display: none;
+  }
+
+  #mobile-menu {
+    z-index: 8000;
+    position: fixed;
+    inset: 0 0 60% 0;
+    flex-direction: column;
+    gap: 1em;
+    background: rgba(255, 255, 255, 0.637);
+    backdrop-filter: blur(1rem);
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 10em 0 10em 0;
+  }
+
+  .hamburger {
+    display: block;
+    color: #e43d45;
+  }
+
+  .mobile-nav-exit {
+    display: block;
+    z-index: 9999;
+    top: 2rem;
+    right: 2rem;
+    padding: 0;
+    border: none;
+    margin-top: 2em;
+    background: none;
   }
 
   .title {
