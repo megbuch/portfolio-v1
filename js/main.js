@@ -46,12 +46,15 @@ hiddenEls.forEach((el) => observer.observe(el));
 // mobile nav menu
 navExit.addEventListener("click", closeNav);
 hamburger.addEventListener("click", openNav);
+window.addEventListener("resize", closeNav);
 
 function closeNav() {
-  navMenu.classList.add("hide");
+  navMenu.style.display = "none";
+  if (window.matchMedia("(max-width: 770px)").matches) {
+    navMenu.style.display = "none";
+  }
 }
 
 function openNav() {
-  navMenu.classList.remove("hide");
+  navMenu.style.display = "flex";
 }
-console.log(navMenu);
