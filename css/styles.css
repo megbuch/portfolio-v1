@@ -360,12 +360,12 @@ footer > p > a {
   #mobile-menu {
     z-index: 8000;
     position: fixed;
-    inset: 0 0 0 40%;
+    inset: 0 0 40% 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background: rgba(255, 255, 255, 0.747);
+    background: rgba(255, 255, 255, 0.849);
     backdrop-filter: blur(1rem);
     font-size: 1.6rem;
     font-weight: 600;
@@ -382,6 +382,8 @@ footer > p > a {
     padding: 0;
     border: none;
     background: none;
+    color: #e43d45;
+    padding: 1rem 0;
   }
 
   .mobile-nav-exit:hover {
