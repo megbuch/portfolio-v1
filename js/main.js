@@ -35,7 +35,6 @@ function complete() {
 // scroll animation
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     }
@@ -52,7 +51,6 @@ window.addEventListener("resize", closeNav);
 if (window.matchMedia("(max-width: 771px)").matches) {
   navMenu.style.display = "none";
   hamburger.style.display = "none";
-  // nav.style.justifyContent = "space-between";
 }
 
 if (window.matchMedia("(max-width: 770px)").matches) {
