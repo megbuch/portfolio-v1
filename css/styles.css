@@ -25,10 +25,16 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 60px;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
+}
+
+.hamburger {
+  position: absolute;
+  right: 1em;
 }
 
 .mobile-nav-exit,
