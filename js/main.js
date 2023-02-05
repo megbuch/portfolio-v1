@@ -5,6 +5,7 @@ const hiddenEls = document.querySelectorAll(".hidden");
 const navExit = document.querySelector(".mobile-nav-exit");
 const navMenu = document.getElementById("mobile-menu");
 const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector("nav");
 
 // animated text
 nameEl.textContent = "";
@@ -48,11 +49,18 @@ navExit.addEventListener("click", closeNav);
 hamburger.addEventListener("click", openNav);
 window.addEventListener("resize", closeNav);
 
+if (window.matchMedia("(min-width: 771px)").matches) {
+  navMenu.style.display = "none";
+  hamburger.style.display = "none";
+}
+
+if (window.matchMedia("(max-width: 770px)").matches) {
+  nav.style.justifyContent = "space-between";
+  hamburger.style.display = "block";
+}
+
 function closeNav() {
   navMenu.style.display = "none";
-  if (window.matchMedia("(max-width: 770px)").matches) {
-    navMenu.style.display = "none";
-  }
 }
 
 function openNav() {
