@@ -349,7 +349,8 @@ footer > p > a {
   nav {
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 2rem;
+    margin: 1rem 0;
   }
 
   #primary-nav {
@@ -359,12 +360,12 @@ footer > p > a {
   #mobile-menu {
     z-index: 8000;
     position: fixed;
-    inset: 0 0 40% 0%;
+    inset: 0 0 0 40%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background: rgba(255, 255, 255, 0.637);
+    background: rgba(255, 255, 255, 0.747);
     backdrop-filter: blur(1rem);
     font-size: 1.6rem;
     font-weight: 600;
@@ -380,12 +381,10 @@ footer > p > a {
     display: block;
     padding: 0;
     border: none;
-    margin-top: 2em;
     background: none;
   }
 
   .mobile-nav-exit:hover {
-    background: none;
     color: #c41d25;
   }
 
