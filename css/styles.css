@@ -375,15 +375,18 @@ footer > p > a {
     color: #e43d45;
   }
 
-  .mobile-nav-exit {
+  .mobile-nav-exit,
+  .mobile-nav-exit::before {
     display: block;
-    z-index: 9999;
-    top: 2rem;
-    right: 2rem;
     padding: 0;
     border: none;
     margin-top: 2em;
     background: none;
+  }
+
+  .mobile-nav-exit:hover {
+    background: none;
+    color: #c41d25;
   }
 
   .title {
