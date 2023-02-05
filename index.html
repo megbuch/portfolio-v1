@@ -19,8 +19,9 @@
     <title>Meghan Bucher</title>
   </head>
   <body>
+    
     <nav>
-      <p>logo here</p>
+      <a href="#top"><p>mb.</p></a>
       <div class="links">
         <a href="#top">Home</a>
         <a href="#work">Work</a>
@@ -29,7 +30,6 @@
         <a target="_blank" href="./assets/other/resume.pdf">Resume</a>
       </div>
     </nav>
-
     <section id="home">
       <div class="wrapper">
         <h1 id="meghan">Hello, I'm Meghan Bucher.</h1>
@@ -91,36 +91,37 @@
 
     <section id="about" class="hidden">
       <div class="small-wrapper">
-        <h2>About Me</h2>
-        <div class="row">
-          <img id="headshot" src="./assets/images/headshot.png" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            assumenda quam quisquam perspiciatis expedita obcaecati. Quisquam
-            vitae ducimus, similique provident, atque pariatur ab in suscipit
-            illum esse dolores eum adipisci? Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Doloremque modi ipsum aperiam quia
-            quos ipsam iusto magnam, ad odio aliquid quae quod tempora et beatae
-            deleniti eum impedit vitae maiores?
-          </p>
-        </div>
-      </div>
+        <h4>About Me</h4>
+        <p>
+          I'm a driven full stack developer with a passion for crafting elegant,
+          impactful solutions. I aim to deliver
+          <span class="accent">engaging, meaningful, and memorable</span> user
+          experiences. <img id="headshot" align="right" src="./assets/images/headshot.png" />Thriving in the front-end, I enjoy working at the
+          intersection of art, design, and functionality.<br /><br /> With a
+          background in content creation and entrepreneurship, I bring a unique
+          and proven blend of adaptability, creative problem-solving skills, and
+          innovative marketing solutions to every project.<br />
+        </p>
+        <button class="submit">
+          <a href="./assets/other/resume.pdf">View Resume</a>
+        </button>
+        <h4>Skills</h4>
+        <div><b>Languages: </b>JavaScript, Python, HTML5, CSS3</div>
+        <div><b>Libraries & Frameworks: </b>React, Express, Mongoose, Django, SASS</div>
+        <div><b>Databases: </b>MongoDB, PostgreSQL</div>
+        <div><b>Other: </b>Node.js, RESTful APIs, Git</div>
+        <div><b>Design: </b>UX/UI, Figma, Adobe Photoshop</div>
     </section>
 
     <section id="contact">
       <div class="small-wrapper">
+        
         <h2>Contact</h2>
         <p>
           I'm currently seeking new opportunities.<br />Feel free to say hello
-          and get in touch with me!
-        </p>
-
-        <div id="email">
-          <p></p>
-          <i class="fa-regular fa fa-envelope"></i>:
+          and get in touch with me!<br />
           <a href="mailto: meg@meghanbucher.work">meg@meghanbucher.work</a>
-        </div>
-
+        </p>
         <form>
           <label>First Name *</label>
           <input type="text" />
@@ -132,7 +133,7 @@
           <input type="text" />
           <label>Message *</label>
           <textarea rows="6" cols="70"></textarea>
-          <button id="submit" type="submit">Send Message</button>
+          <button class="submit" type="submit">Send</button>
         </form>
         <div class="links">
           <a
