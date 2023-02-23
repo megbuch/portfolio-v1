@@ -91,6 +91,9 @@ button {
   padding: 15px 38px;
   letter-spacing: 2px;
   margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button:hover {
@@ -294,6 +297,26 @@ footer > p > a {
   color: white;
   font-size: 15px;
 }
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e43d45;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c41d25;
+}
+
+/* media queries */
 
 @media only screen and (max-width: 1400px) {
   #mobile-menu {
