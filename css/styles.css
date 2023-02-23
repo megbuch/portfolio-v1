@@ -66,6 +66,7 @@ nav > a:hover {
   align-items: center;
   justify-content: center;
   gap: 5rem;
+  margin: 0.5em;
 }
 
 a {
@@ -80,23 +81,27 @@ a:hover {
 
 button {
   font: 16px "Tajawal", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  background: #ffffffad;
-  color: #e43d45;
-  border: 2px solid #ffffff;
+  font-weight: 600;
+  background: #ffffff;
+  color: #fc575f;
+  border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 20px;
-  padding: 15px 38px;
+  padding: 30px 38px;
   letter-spacing: 2px;
   margin-top: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  line-height: 0px;
 }
 
-button:hover {
-  background: rgba(255, 255, 255, 0.856);
+.main-btn {
+  position: relative;
+  top: 0;
+  box-shadow: 0 3px 3px 0 #c75858;
+}
+
+.main-btn:hover {
+  top: 1px;
+  box-shadow: none;
 }
 
 section {
@@ -127,6 +132,10 @@ section {
   background: rgba(255, 255, 255, 0.877);
   display: flex;
   flex-direction: column;
+}
+
+.small-wrapper > p {
+  margin: 1em 0;
 }
 
 #home {
@@ -228,7 +237,7 @@ span.fade {
 #headshot {
   max-height: 10em;
   border-radius: 50%;
-  margin: 2em;
+  margin: 1em;
 }
 
 .skills {
@@ -282,9 +291,10 @@ button > a:hover {
 }
 
 .submit {
-  margin: 1.5em 0 1.5em 0;
+  margin: 2em;
   background-color: #e43d45;
   color: white;
+  transition: 200ms ease-in-out;
 }
 
 .submit:hover {
