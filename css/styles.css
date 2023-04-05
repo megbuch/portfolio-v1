@@ -423,16 +423,17 @@ footer > p > a {
   #mobile-menu {
     z-index: 8000;
     position: fixed;
-    inset: 0 0 40% 0;
+    inset: 0 0 0 40%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     background: rgba(255, 255, 255, 0.849);
-    backdrop-filter: blur(1rem);
-    font-size: 1.6rem;
+    backdrop-filter: blur(3rem);
+    font-size: 1.4rem;
     font-weight: 600;
     padding: 0;
+    margin: 0;
   }
 
   .hamburger {
@@ -446,11 +447,8 @@ footer > p > a {
     border: none;
     background: none;
     color: #e43d45;
-    padding: 1rem 0;
-  }
-
-  .mobile-nav-exit:hover {
-    color: #c41d25;
+    padding: 0;
+    cursor: pointer;
   }
 
   .title {
