@@ -196,26 +196,50 @@ span.fade {
 
 .hidden {
   opacity: 0;
-  transition: all 2s;
+  transition: all 2.5s;
   filter: blur(5px);
-  transform: translateY(30%);
+  transform: translateX(-40%);
 }
 
 .show {
   opacity: 1;
   filter: blur(0);
-  transform: translateY(0);
-}
-
-.mockup {
-  max-width: 50%;
+  transform: translateX(0);
 }
 
 .project-element {
   align-items: center;
   justify-content: center;
-  margin: 4em 0 4em 0;
+  margin: 4em auto;
 }
+
+.project-info {
+  width: 30%;
+}
+
+.mockups {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#npcgen-tablet {
+ width: 70%;
+}
+
+#npcgen-mobile {
+  width: 20%;
+}
+
+#jobseekr-tablet {
+  max-width: 70%;
+  max-height: 40em;
+ }
+ 
+ #jobseekr-mobile {
+   width: 40%;
+   max-height: 44em;
+ }
 
 .row,
 .row-reverse {
@@ -352,8 +376,14 @@ footer > p > a {
     padding: 2em;
   }
 
-  .mockup {
-    max-width: 90%;
+  .project-element {
+    display: flex;
+    gap: 1em;
+    margin: 2em 0;
+  }
+
+  .project-info {
+    width: 100%;
   }
 
   #meghan {

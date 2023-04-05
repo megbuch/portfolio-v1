@@ -59,9 +59,12 @@
     <section id="work">
       <div class="wrapper">
         <h2>Featured Work</h2>
-        <div class="project-element row hidden">
-          <img class="mockup" src="./assets/images/mockup_jobseekr.png" />
-          <div>
+        <div class="project-element row">
+          <div class="mockups">
+            <img id="jobseekr-mobile" class="mockup hidden" src="./assets/images/mockups/mockup_jobseekr_mobile.png" />
+            <img id="jobseekr-tablet" class="mockup hidden" src="./assets/images/mockups/mockup_jobseekr_tablet.png" />
+          </div>
+          <div class="project-info hidden">
             <h3>jobSeekr App</h3>
             <p>
               jobSeekr is the best way to organize all aspects of your job
@@ -82,30 +85,33 @@
             >
           </div>
         </div>
-        <div class="project-element row-reverse hidden">
-          <img class="mockup" src="./assets/images/mockup_npcgen.png" />
-          <div>
-            <h3>D&D 5E NPC Generator</h3>
-            <p>
-              NPC Generator is a web tool designed to enhance the player and
-              dungeon master experience for the hit table-top roleplaying game,
-              Dungeons and Dragons. It's designed to create characters on the
-              fly, generating randomized demographic information, appearance
-              descriptions, ability scores, personality traits, plot hooks,
-              alignments, and corresponding beliefs — all at the push of a
-              button.<br /><br />NPC Generator is built with vanilla JavaScript,
-              HTML, and CSS. All of its content is custom and carefully curated.
-            </p>
-            <a href="https://github.com/bardIRL/npc-generator" target="_blank"
-              >GitHub Repository</a
-            >
-            |
-            <a href="https://npcgen.com/" target="_blank">Live Preview</a>
+        <div class="project-element row-reverse">
+          <div class="mockups">
+            <img id="npcgen-mobile" class="mockup hidden" src="./assets/images/mockups/mockup_npcgen_mobile.png" />
+            <img id="npcgen-tablet" class="mockup hidden" src="./assets/images/mockups/mockup_npcgen_tablet.png" />
           </div>
+          <div class="project-info hidden">
+          <h3>D&D 5E NPC Generator</h3>
+          <p>
+            NPC Generator is a web tool designed to enhance the player and
+            dungeon master experience for the hit table-top roleplaying game,
+            Dungeons and Dragons. It's designed to create characters on the
+            fly, generating randomized demographic information, appearance
+            descriptions, ability scores, personality traits, plot hooks,
+            alignments, and corresponding beliefs — all at the push of a
+            button.<br /><br />NPC Generator is built with vanilla JavaScript,
+            HTML, and CSS. All of its content is custom and carefully curated.
+          </p>
+          <a href="https://github.com/bardIRL/npc-generator" target="_blank"
+            >GitHub Repository</a
+          >
+          |
+          <a href="https://npcgen.com/" target="_blank">Live Preview</a>
         </div>
+        <!-- add projects here -->
       </div>
     </section>
-    <section id="about" class="hidden">
+    <section id="about">
       <div class="small-wrapper">
         <h2>About Me</h2>
         <p>
@@ -129,7 +135,7 @@
         <div><b>Design: </b>UX/UI, Figma, Adobe Photoshop</div>
     </section>
     <section id="contact">
-      <div class="small-wrapper hidden"> 
+      <div class="small-wrapper"> 
         <h2>Contact</h2>
         <p>
           I'm currently seeking new opportunities.<br />Feel free to say hello
