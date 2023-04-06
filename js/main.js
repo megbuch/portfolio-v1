@@ -2,10 +2,8 @@ const nameEl = document.getElementById("meghan");
 const strNameEl = nameEl.textContent;
 const splitNameEl = strNameEl.split("");
 const hiddenEls = document.querySelectorAll(".hidden");
-const navExit = document.querySelector(".mobile-nav-exit");
-const navMenu = document.getElementById("mobile-menu");
-const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector("nav");
+const navIcon = document.getElementById('nav-icon');
+const navMenu = document.getElementById('mobile-menu');
 
 // animated text
 nameEl.textContent = "";
@@ -46,23 +44,19 @@ const observer = new IntersectionObserver((entries) => {
 hiddenEls.forEach((el) => observer.observe(el));
 
 // mobile nav menu
-navExit.addEventListener("click", closeNav);
-hamburger.addEventListener("click", openNav);
-window.addEventListener("resize", closeNav);
-
-if (window.matchMedia("(max-width: 771px)").matches) {
-  navMenu.style.display = "none";
-  hamburger.style.display = "none";
+function toggleNavMenu() {
+  navIcon.classList.toggle('open');
+  if (navIcon.classList.contains('open')) {
+    navMenu.style.display = 'flex';
+  } else {
+    navMenu.style.display = 'none';
+  }
 }
 
-if (window.matchMedia("(max-width: 770px)").matches) {
-  hamburger.style.display = "block";
-}
-
-function closeNav() {
+function closeNavMenu() {
+  navIcon.classList.remove('open');
   navMenu.style.display = "none";
 }
 
-function openNav() {
-  navMenu.style.display = "flex";
-}
+navIcon.addEventListener("click", toggleNavMenu);
+window.addEventListener("resize", closeNavMenu);
