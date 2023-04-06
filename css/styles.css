@@ -308,6 +308,10 @@ span.fade {
   margin: 0 0 10px 0;
 }
 
+.skills-section {
+  justify-content: center;
+}
+
 .skill {
   border-radius: 8px;
   padding: 8px;
