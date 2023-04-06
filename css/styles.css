@@ -22,6 +22,10 @@ body {
   color: black;
 }
 
+p {
+  margin: 0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -82,21 +86,19 @@ a:hover {
 button {
   font: 16px "Tajawal", Helvetica, Arial, sans-serif;
   font-weight: 600;
-  background: #ffffff;
-  color: #fc575f;
-  border: none;
-  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  color: #e43d45;
+  border: 2px solid white;
+  border-radius: 5px;
   cursor: pointer;
-  padding: 30px 38px;
+  padding: 20px 30px;
   letter-spacing: 2px;
-  margin-top: 2em;
   line-height: 8px;
 }
 
 .main-btn {
   position: relative;
   top: 0;
-  box-shadow: 0 3px 3px 0 #c75858;
 }
 
 .main-btn:hover {
@@ -115,12 +117,10 @@ section {
 
 .wrapper {
   max-width: 80%;
-  margin-inline: auto;
-  padding-inline: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 
 .small-wrapper {
@@ -134,42 +134,40 @@ section {
   flex-direction: column;
 }
 
-.small-wrapper > p {
-  margin: 1em 0;
-}
-
 #home {
   background-image: linear-gradient(
       to right,
-      rgba(216, 25, 0, 0.726),
-      rgba(245, 144, 152, 0.774)
+      #e43d45cc,
+      #ffffff
     ),
     url("../assets/images/d20.jpg");
-  background-position: top;
+  background-position: bottom;
   background-size: cover;
-  clip-path: polygon(0 10%, 100% 20%, 100% 95%, 0 85%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   text-align: center;
-  padding-top: 7em;
+  padding-top: 1em;
   margin-bottom: 2em;
 }
 
 .title {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 300;
   letter-spacing: 1px;
-  margin: 0;
+  margin-bottom: 1em;
   color: white;
 }
 
 h1 {
   font-size: 5rem;
-  letter-spacing: 3px;
+  font-weight: 300;
+  letter-spacing: 2px;
   line-height: 1.5;
   margin: 0;
-  color: #ffffff;
+  color: white;
 }
 
 h2 {
+  text-align: center;
   font-size: 2rem;
   font-weight: 300;
   margin: 0;
@@ -224,6 +222,16 @@ span.fade {
   width: 50%;
 }
 
+.mockup {
+  position: relative;
+  top: 0;
+  transition: 600ms ease-out;
+}
+
+.mockup:hover {
+  top: -20px;
+}
+
 #npcgen-tablet {
   width: 60%;
 }
@@ -268,18 +276,11 @@ span.fade {
   flex-direction: row-reverse;
 }
 
-.justify {
-  text-align: left;
-}
 
 #headshot {
   max-height: 10em;
   border-radius: 50%;
   margin: 1em;
-}
-
-.skills {
-  display: flex;
 }
 
 #contact {
@@ -423,11 +424,11 @@ footer > p > a {
 
 @media only screen and (max-width: 770px) {
   #meghan {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .title {
-    font-size: 0.2rem;
+    font-size: 2rem;
   }
 
   h2 {
@@ -458,7 +459,7 @@ footer > p > a {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background: rgba(255, 255, 255, 0.849);
+    background: rgba(255, 255, 255, 0.068);
     backdrop-filter: blur(3rem);
     font-size: 1.4rem;
     font-weight: 600;
@@ -481,15 +482,21 @@ footer > p > a {
     cursor: pointer;
   }
 
-  .title {
-    font-size: 1.5rem;
-  }
-
   .wrapper {
     padding: 0;
   }
 
   .project-info, .mockups {
     width: 87vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #meghan {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 1rem;
   }
 }
