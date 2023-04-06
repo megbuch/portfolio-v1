@@ -16,9 +16,9 @@ body {
 }
 
 body {
-  font: 16px "Hind Siliguri", Helvetica, Arial, sans-serif;
+  font: 16px "Nunito Sans", "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 2;
   background: rgb(255, 255, 255);
   color: black;
 }
@@ -83,7 +83,7 @@ a:hover {
 }
 
 .btn {
-  font: 15px "Hind Siliguri", Helvetica, Arial, sans-serif;
+  font: 15px "Nunito Sans", "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 500;
   background: #e43d45;
   color: white;
@@ -177,7 +177,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 1.7rem;
-  font-weight: 100;
+  font-weight: 300;
   margin: 0;
   line-height: 1.5;
 }
@@ -254,7 +254,7 @@ span.fade {
 }
 
 #npcgen-tablet {
-  width: 60%;
+  width: 70%;
 }
 
 #npcgen-mobile {
@@ -267,8 +267,8 @@ span.fade {
 }
 
 #jobseekr-mobile {
-  width: 20%;
-  max-height: 44em;
+  width: 30%;
+  max-height: 50em;
 }
 
 #gitfunded-mobile {
@@ -400,7 +400,7 @@ textarea {
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
-  font-family: "Hind Siliguri", Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 textarea {
