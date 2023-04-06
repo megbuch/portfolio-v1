@@ -289,6 +289,13 @@ span.fade {
   margin: 1em 0;
 }
 
+.headshot-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #headshot {
   max-height: 10em;
   border-radius: 50%;
