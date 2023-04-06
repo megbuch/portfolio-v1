@@ -469,8 +469,8 @@ footer > p > a {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background: rgba(255, 255, 255, 0.068);
-    backdrop-filter: blur(3rem);
+    background: white;
+    backdrop-filter: blur(10rem);
     font-size: 1.4rem;
     font-weight: 600;
     padding: 0;
