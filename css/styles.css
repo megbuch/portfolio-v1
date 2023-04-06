@@ -16,7 +16,8 @@ body {
 }
 
 body {
-  font: 16px "Tajawal", Helvetica, Arial, sans-serif;
+  font: 16px "Hind Siliguri", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   line-height: 1.7;
   background: rgb(255, 255, 255);
   color: black;
@@ -24,6 +25,10 @@ body {
 
 p {
   margin: 12px 0;
+}
+
+b {
+  font-weight: 600;
 }
 
 nav {
@@ -78,7 +83,7 @@ a:hover {
 }
 
 .btn {
-  font: 15px "Tajawal", Helvetica, Arial, sans-serif;
+  font: 15px "Hind Siliguri", Helvetica, Arial, sans-serif;
   font-weight: 500;
   background: #e43d45;
   color: white;
@@ -171,13 +176,14 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 2rem;
-  font-weight: 300;
-  margin: 0 0.5rem 0;
-  line-height: 2;
+  font-size: 1.7rem;
+  font-weight: 100;
+  margin: 0;
+  line-height: 1.5;
 }
 
 h3 {
+  font-weight: 400;
   font-size: 2rem;
   color: #e43d45;
   margin: 0;
@@ -311,9 +317,12 @@ span.fade {
 }
 
 .skills {
+  max-width: 80%;
+  margin: 1em auto;
   display: flex;
+  align-items: center;
+  justify-content: left;
   flex-wrap: wrap;
-  margin: 1em;
 }
 
 .skill {
@@ -391,7 +400,7 @@ textarea {
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
-  font-family: "Tajawal", Helvetica, Arial, sans-serif;
+  font-family: "Hind Siliguri", Helvetica, Arial, sans-serif;
 }
 
 textarea {
