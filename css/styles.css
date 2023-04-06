@@ -85,9 +85,10 @@ a:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  padding: 20px;
   letter-spacing: 1px;
-  line-height: 50%;
+  padding: 0;
+  height: 45px;
+  line-height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -316,9 +317,10 @@ span.fade {
 }
 
 .skill {
+  height: 22px;
+  line-height: 22px;
   border-radius: 8px;
-  padding: 2%;
-  line-height: 0;
+  padding: 0 8px;
   margin: 5px 8px 5px 0;
   font-weight: 500;
   position: relative;
