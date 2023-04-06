@@ -23,7 +23,7 @@ body {
 }
 
 p {
-  margin: 0;
+  margin: 12px 0;
 }
 
 nav {
@@ -219,7 +219,6 @@ span.fade {
 }
 
 .project-info > p {
-  margin: 12px 0;
   text-align: justify;
 }
 
