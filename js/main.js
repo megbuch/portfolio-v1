@@ -47,7 +47,6 @@ hiddenEls.forEach((el) => observer.observe(el));
 function toggleNavMenu() {
   navIcon.classList.toggle("open");
   if (navIcon.classList.contains("open")) {
-    console.log("wow");
     navMenu.style.display = "flex";
   } else {
     navMenu.style.display = "none";
