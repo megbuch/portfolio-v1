@@ -214,17 +214,18 @@ span.fade {
 }
 
 .project-info {
-  width: 30%;
+  width: 40%;
 }
 
 .mockups {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 50%;
 }
 
 #npcgen-tablet {
- width: 70%;
+  width: 60%;
 }
 
 #npcgen-mobile {
@@ -232,22 +233,35 @@ span.fade {
 }
 
 #jobseekr-tablet {
-  max-width: 70%;
+  max-width: 65%;
   max-height: 40em;
  }
  
  #jobseekr-mobile {
-   width: 40%;
+   width: 20%;
    max-height: 44em;
+ }
+
+ #gitfunded-mobile {
+    width: 20%;
+    margin-left: -120px;
+ }
+
+ #gitfunded-tablet {
+    width: 50%;
+ }
+
+ #gitfunded-desktop {
+    width: 60%;
+    margin-left: -40px;
  }
 
 .row,
 .row-reverse {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  gap: 5em;
+  justify-content: space-around;
 }
 
 .row-reverse {
@@ -382,8 +396,24 @@ footer > p > a {
     margin: 2em 0;
   }
 
-  .project-info {
-    width: 100%;
+  #jobseekr-mobile {
+    margin-right: -80px;
+    z-index: 1;
+    width: 30%;
+  }
+
+  #npcgen-tablet {
+    width: 90%;
+  }
+
+  #npcgen-mobile {
+    margin-right: -80px;
+    z-index: 1;
+    width: 30%;
+  }
+
+  .project-info, .mockups {
+    width: 80vw;
   }
 
   #meghan {
@@ -459,7 +489,7 @@ footer > p > a {
     padding: 0;
   }
 
-  .mockup {
-    max-width: 100%;
+  .project-info, .mockups {
+    width: 87vw;
   }
 }
