@@ -85,12 +85,13 @@ button {
   border: 2px solid white;
   border-radius: 5px;
   cursor: pointer;
-  padding: 18px 30px;
+  padding: 25px;
   letter-spacing: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  line-height: 0;
 }
 
 .main-btn {
@@ -305,16 +306,13 @@ span.fade {
 .skills {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 10px 0;
-}
-
-.skills-section {
-  justify-content: center;
+  margin: 1em;
 }
 
 .skill {
   border-radius: 8px;
-  padding: 8px;
+  padding: 10px;
+  line-height: 0;
   margin: 5px 8px 5px 0;
   font-weight: 500;
   position: relative;
