@@ -16,8 +16,8 @@ body {
 }
 
 body {
-  font: 16px "Nunito Sans", "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font: 15px "Nunito Sans", "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
   line-height: 2;
   background: rgb(255, 255, 255);
   color: black;
@@ -46,14 +46,6 @@ ul {
   padding: 0;
   list-style: none;
 }
-
-/* nav > a {
-  margin: 0;
-  font-size: 30px;
-  font-weight: 300;
-  color: #e43d45e5;
-  letter-spacing: -2px;
-} */
 
 nav > a:hover {
   color: #e43d45;
@@ -331,7 +323,8 @@ span.fade {
   border-radius: 8px;
   padding: 0 8px;
   margin: 5px 8px 5px 0;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 13px;
   position: relative;
   top: 0;
   transition: 50ms ease-out;
