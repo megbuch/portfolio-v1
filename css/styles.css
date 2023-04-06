@@ -50,7 +50,12 @@ nav {
 
 ul {
   margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 nav > a {
@@ -91,9 +96,8 @@ button {
   border: 2px solid white;
   border-radius: 5px;
   cursor: pointer;
-  padding: 20px 30px;
+  padding: 18px 30px;
   letter-spacing: 2px;
-  line-height: 8px;
 }
 
 .main-btn {
