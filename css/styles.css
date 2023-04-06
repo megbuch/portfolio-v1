@@ -77,35 +77,36 @@ a:hover {
   color: black;
 }
 
-button {
+.btn {
   font: 15px "Tajawal", Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  background: rgb(255, 255, 255);
-  color: #e43d45;
-  border: 2px solid white;
+  font-weight: 500;
+  background: #e43d45;
+  color: white;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-  padding: 20px;
-  letter-spacing: 2px;
+  padding: 15px 20px;
+  letter-spacing: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1em auto;
-  line-height: 0;
-}
-
-.main-btn {
   position: relative;
   top: 0;
+  width: 80%;
 }
 
-.main-btn:hover {
+.btn:hover {
   top: 1px;
   box-shadow: none;
 }
 
-.resume-btn {
-  font-size: 15px;
+.btn > a {
+  color: white;
+}
+
+.explore {
+  width: 15em;
 }
 
 section {
@@ -392,23 +393,6 @@ textarea {
 
 textarea {
   resize: none;
-}
-
-button > a,
-button > a:hover {
-  color: white;
-  font-size: 1rem;
-}
-
-.submit {
-  margin: 1em;
-  background-color: #e43d45;
-  color: white;
-  transition: 200ms ease-in-out;
-}
-
-.submit:hover {
-  background-color: #c41d25;
 }
 
 footer > p > a {
