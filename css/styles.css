@@ -170,7 +170,14 @@ h2 {
 }
 
 h3 {
+  font-size: 2rem;
   color: #e43d45;
+  margin: 0;
+}
+
+h4 {
+  font-weight: 700;
+  margin: 0 0 1rem 0;
 }
 
 .accent {
@@ -208,7 +215,12 @@ span.fade {
 }
 
 .project-info {
-  width: 40%;
+  width: 30%;
+}
+
+.project-info > p {
+  margin: 12px 0;
+  text-align: justify;
 }
 
 .mockups {
@@ -284,15 +296,16 @@ span.fade {
   margin: 1em;
 }
 
-#skills {
+.skills {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 0 10px 0;
 }
 
 .skill {
   border-radius: 8px;
   padding: 3px 8px 4px;
-  margin: 5px 4px;
+  margin: 5px 8px 5px 0;
   font-weight: 500;
   position: relative;
   top: 0;
@@ -587,10 +600,6 @@ footer > p > a {
     margin: 0;
   }
 
-  .wrapper {
-    padding: 0;
-  }
-
   .project-info,
   .mockups {
     width: 87vw;
@@ -604,5 +613,9 @@ footer > p > a {
 
   .subheading {
     font-size: 1rem;
+  }
+
+  .skill {
+    font-size: 14px;
   }
 }
