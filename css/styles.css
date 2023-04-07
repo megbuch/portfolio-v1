@@ -42,20 +42,21 @@ nav {
 }
 
 nav > a {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 600;
   letter-spacing: -1px;
-  opacity: 80%;
+  transition: 600ms ease-in-out;
+  opacity: 90%;
+}
+
+nav > a:hover {
+  opacity: 100%;
 }
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-nav > a:hover {
-  color: #e43d45;
 }
 
 #nav-icon,
@@ -495,11 +496,11 @@ footer > p > a {
 
   /* hamburger styles */
   #nav-icon {
-    top: 0;
-    right: 0;
+    top: -8px;
+    right: -5px;
     margin: 0;
     display: block;
-    width: 35px;
+    width: 28px;
     height: 20px;
     position: relative;
     -webkit-transform: rotate(0deg);
@@ -557,10 +558,10 @@ footer > p > a {
   }
 
   #nav-icon.open span:nth-child(1) {
-    -webkit-transform: rotate(42deg);
-    -moz-transform: rotate(42deg);
-    -o-transform: rotate(42deg);
-    transform: rotate(42deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
     top: 0px;
     right: 13px;
   }
@@ -571,11 +572,11 @@ footer > p > a {
   }
 
   #nav-icon.open span:nth-child(3) {
-    -webkit-transform: rotate(-42deg);
-    -moz-transform: rotate(-42deg);
-    -o-transform: rotate(-42deg);
-    transform: rotate(-42deg);
-    top: 23px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 20px;
     right: 12px;
   }
 
