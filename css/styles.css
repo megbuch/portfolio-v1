@@ -18,7 +18,7 @@ body {
 body {
   font: 15px "Nunito Sans", "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  line-height: 2;
+  line-height: 2.2;
   background: rgb(255, 255, 255);
   color: black;
 }
@@ -33,7 +33,7 @@ b {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   padding: 10px 60px;
   position: fixed;
@@ -137,9 +137,10 @@ section {
   max-width: 30vw;
   margin: 2em;
   padding: 2em;
-  border: 2px solid #e43d45;
+  /* border: 2px solid #ffffff; */
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.877);
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,10 +158,16 @@ section {
   margin-bottom: 2em;
 }
 
+.main-heading {
+  font-size: 6rem;
+  font-weight: 600;
+  letter-spacing: 14px;
+}
+
 .subheading {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin-bottom: 1em;
   color: white;
 }
@@ -184,7 +191,7 @@ h2 {
 
 h3 {
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #e43d45;
   margin: 0;
 }
@@ -211,15 +218,19 @@ span.fade {
 
 .hidden {
   opacity: 0;
-  transition: all 2.5s;
+  transition: all 1s;
   filter: blur(5px);
-  transform: translateX(-40%);
+  transform: translateX(-20%);
 }
 
 .show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+#work {
+  margin: 1em 0;
 }
 
 .project-element {
@@ -230,10 +241,6 @@ span.fade {
 
 .project-info {
   width: 30%;
-}
-
-.project-info > p {
-  text-align: justify;
 }
 
 .mockups {
@@ -316,9 +323,19 @@ span.fade {
   margin: 1em;
 }
 
+#education > p {
+  font-size: 14px;
+}
+
+.skills-section > .skills {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .skills {
   max-width: 80%;
-  margin: 1em auto;
+  margin: 1em 0;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -378,6 +395,12 @@ span.fade {
   background-size: cover;
   text-align: center;
   margin: 4em 0 0 0;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+#contact > .small-wrapper > p {
+  font-size: 14px;
 }
 
 form {
@@ -387,31 +410,49 @@ form {
   gap: 3px;
 }
 
+.form-row {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  gap: 10px;
+  width: 100%;
+}
+
+.form-element {
+  width: 50%;
+}
+
 label {
   text-align: left;
-  font-weight: 600;
-  font-size: 0.8rem;
+  font-weight: 800;
+  font-size: 11px;
   letter-spacing: 1px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  border: none;
+  border: 1px solid rgb(226, 226, 226);
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
   font-family: "Nunito Sans", "Open Sans", Helvetica, Arial, sans-serif;
+  width: 100%;
 }
 
 textarea {
   resize: none;
 }
 
+footer {
+  position: absolute;
+  bottom: 5px;
+}
+
 footer > p > a {
-  margin-top: 2em;
-  color: white;
-  font-size: 15px;
+  color: #e43d45;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 /* scroll bar */
@@ -435,27 +476,32 @@ footer > p > a {
 /* media queries */
 
 @media only screen and (max-width: 1400px) {
-  .row,
-  .row-reverse {
-    flex-direction: column;
+  .subheading {
+    font-size: 2.4rem;
   }
 
   .wrapper {
     margin-left: 0;
     margin-right: 0;
-    max-width: 90%;
+    width: 90vw;
   }
 
   .small-wrapper {
-    max-width: 60vw;
+    min-width: 40vw;
     padding: 1em;
-    margin: 1em 0;
+    margin: 0;
+  }
+
+  #about.row {
+    padding: 0 2em;
+    margin: 0;
+    gap: 2em;
   }
 
   .project-element {
     display: flex;
     gap: 1em;
-    margin: 3em 0;
+    margin: 3em 1em;
   }
 
   #jobseekr-mobile {
@@ -474,30 +520,109 @@ footer > p > a {
     width: 30%;
   }
 
+  .project-element {
+    gap: 3em;
+  }
+
+  #about {
+    gap: 0;
+  }
+
   .project-info,
   .mockups {
-    width: 80vw;
+    width: 40vw;
   }
+}
 
+@media only screen and (max-width: 1100px) {
   .main-heading {
-    font-size: 5rem;
+    font-size: 3.6rem;
   }
-}
-@media only screen and (max-width: 1200px) {
+  .subheading {
+    font-size: 1.7rem;
+  }
+  nav {
+    justify-content: center;
+  }
+
+  .row,
+  .row-reverse {
+    flex-direction: column;
+  }
+
+  .project-info,
+  .mockups {
+    width: 65vw;
+  }
+
   .small-wrapper {
-    max-width: 60vw;
+    min-width: 70vw;
+  }
+
+  .small-wrapper > .row {
+    flex-direction: row;
+  }
+
+  .skills-edu {
+    flex-direction: row;
+  }
+
+  .skills-section {
+    width: 50%;
+    margin: 0;
+  }
+
+  .skills {
+    width: 100%;
   }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 750px) {
+  nav {
+    justify-content: right;
+  }
+
+  .project-info,
+  .mockups {
+    width: 85vw;
+  }
+
   .small-wrapper {
-    max-width: 80vw;
+    min-width: 85vw;
+  }
+
+  #about.row {
+    padding: 0;
+  }
+
+  .skills-edu {
+    flex-direction: column;
+  }
+
+  .skills-section {
+    width: 100%;
+  }
+
+  .skills {
+    width: 100%;
   }
 
   /* hamburger styles */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.336);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1;
+  }
+
   #nav-icon {
-    top: -8px;
-    right: -5px;
+    top: 10px;
+    right: 0px;
     margin: 0;
     display: block;
     width: 28px;
@@ -581,11 +706,13 @@ footer > p > a {
   }
 
   .main-heading {
-    font-size: 4rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
   }
 
   .subheading {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   h2 {
@@ -606,42 +733,53 @@ footer > p > a {
   #mobile-menu {
     z-index: 3;
     position: fixed;
-    inset: 8% 8%;
+    inset: 20% 10%;
     border-radius: 12px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    background: rgba(255, 255, 255, 0.521);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(10px);
-    height: 70%;
+    background: rgb(255, 255, 255);
+    height: 60vh;
     font-size: 1.4rem;
     font-weight: 100;
     padding: 0;
     margin: 0;
   }
+}
 
-  .project-info,
-  .mockups {
-    width: 87vw;
+@media only screen and (max-width: 535px) {
+  .small-wrapper > .row {
+    flex-direction: column;
   }
 }
 
 @media only screen and (max-width: 450px) {
+  .project-info,
+  .mockups {
+    width: 90vw;
+  }
+
   .small-wrapper {
-    max-width: 95vw;
+    min-width: 92vw;
+  }
+
+  #home {
+    align-items: center;
+    text-align: left;
+    padding: 0;
   }
 
   .main-heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .subheading {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin: 0;
   }
 
-  .skill {
-    font-size: 14px;
+  .explore {
+    margin-top: 3em;
   }
 }

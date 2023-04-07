@@ -1,36 +1,9 @@
-const nameEl = document.querySelector(".main-heading");
-const strNameEl = nameEl.textContent;
-const splitNameEl = strNameEl.split("");
 const hiddenEls = document.querySelectorAll(".hidden");
 const navIcon = document.getElementById("nav-icon");
 const navMenu = document.getElementById("mobile-menu");
 
-// animated text
-nameEl.textContent = "";
-
-for (let i = 0; i < splitNameEl.length; i++) {
-  nameEl.innerHTML += "<span>" + splitNameEl[i] + "</span>";
-}
-
-let char = 0;
-let timer = setInterval(onTick, 50);
-
-function onTick() {
-  const span = nameEl.querySelectorAll("span")[char];
-  span.classList.add("fade");
-  char++;
-  if (char === splitNameEl.length) {
-    complete();
-    return;
-  }
-}
-
-function complete() {
-  clearInterval(timer);
-  timer = null;
-}
-
 // scroll animation
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -48,14 +21,25 @@ function toggleNavMenu() {
   navIcon.classList.toggle("open");
   if (navIcon.classList.contains("open")) {
     navMenu.style.display = "flex";
+    const overlay = document.createElement("div");
+    overlay.classList.add("overlay");
+    document.body.appendChild(overlay);
   } else {
     navMenu.style.display = "none";
+    const overlay = document.querySelector(".overlay");
+    if (overlay) {
+      overlay.remove();
+    }
   }
 }
 
 function closeNavMenu() {
   navIcon.classList.remove("open");
   navMenu.style.display = "none";
+  const overlay = document.querySelector(".overlay");
+  if (overlay) {
+    overlay.remove();
+  }
 }
 
 window.addEventListener("resize", closeNavMenu);

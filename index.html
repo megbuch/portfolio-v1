@@ -37,13 +37,12 @@
   </head>
   <body>
     <nav>
-      <a href="#top"><i class="fa-solid fa-m fa-sm"></i></a>
+      <!-- <a href="#top"><i class="fa-solid fa-m fa-sm"></i></a> -->
       <div id="nav-icon">
         <span></span>
         <span></span>
         <span></span>
       </div>
-
       <ul class="links" id="primary-nav">
         <li><a href="#top">Home</a></li>
         <li><a href="#work">Work</a></li>
@@ -73,8 +72,8 @@
     </nav>
     <section id="home">
       <div class="wrapper">
-        <h1 class="main-heading">Meghan Bucher</h1>
-        <h1 class="subheading">full stack developer & software engineer</h1>
+        <h1 class="main-heading">meghan mucher</h1>
+        <h1 class="subheading">full stack developer + software engineer</h1>
         <div class="btn explore">
           <a href="#work">Explore My Work</a>
         </div>
@@ -251,8 +250,8 @@
           </div>
         </div>
       </div>
-      <div class="small-wrapper">
-        <div>
+      <div class="small-wrapper skills-edu">
+        <div class="skills-section">
           <h2>Skills</h2>
           <div class="skills">
             <div class="skill language"><p>JavaScript</p></div>
@@ -276,15 +275,23 @@
           </div>
         </div>
         <br />
-        <div>
+        <div id="education">
           <h2>Education</h2>
           <p>
             <b>Software Engineering Immersive, General Assembly</b>
-            <br />Cert. Awarded March 2023
+            <br />Cert. Awarded March 2023&nbsp;&nbsp;<a
+              target="_blank"
+              href="https://meghanbucher.work/assets/other/generalassembly.pdf"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
           </p>
           <p>
             <b>Certified ScrumMaster, ScrumAlliance</b>
-            <br />Cert. Awarded March 2023
+            <br />Cert. Awarded March 2023&nbsp;&nbsp;<a
+              target="_blank"
+              href="https://meghanbucher.work/assets/other/scrumalliance.pdf"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
           </p>
           <p>
             <b>B.S. in Business Administration, San Jose State University</b>
@@ -316,18 +323,32 @@
           />
           <input type="hidden" name="_captcha" value="false" />
           <input type="text" name="_honey" style="display: none" />
-          <label>First Name *</label>
-          <input type="text" name="firstName" required />
-          <label>Last Name *</label>
-          <input type="text" name="lastName" required />
-          <label>Email *</label>
-          <input type="email" name="email" required />
-          <label>Phone</label>
-          <input type="text" name="phone" />
+          <div class="form-row">
+            <div class="form-element">
+              <label>First Name *</label>
+              <input type="text" name="firstName" required />
+            </div>
+            <div class="form-element">
+              <label>Last Name *</label>
+              <input type="text" name="lastName" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-element">
+              <label>Email *</label>
+              <input type="email" name="email" required />
+            </div>
+            <div class="form-element">
+              <label>Phone</label>
+              <input type="text" name="phone" />
+            </div>
+          </div>
           <label>Message *</label>
-          <textarea rows="6" cols="70" name="message" required></textarea>
+          <textarea rows="5" cols="70" name="message" required></textarea>
           <button class="btn" type="submit">Send Message</button>
         </form>
+      </div>
+      <footer>
         <div class="links">
           <a
             href="mailto: meg@meghanbucher.work"
@@ -344,11 +365,8 @@
             class="fa fa-lg fa-github"
           ></a>
         </div>
-      </div>
-      <footer>
         <p>
-          <a href="#top">Back to Top</a><br />
-          <a href="https://github.com/bardIRL"
+          <a href="https://github.com/bardIRL/portfolio" target="_blank"
             >Designed & Built by Meghan Bucher</a
           >
         </p>
