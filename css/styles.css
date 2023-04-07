@@ -41,6 +41,13 @@ nav {
   z-index: 2;
 }
 
+nav > a {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  opacity: 80%;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -67,7 +74,7 @@ nav > a:hover {
 a {
   text-decoration: none;
   color: #e43d45;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 a:hover {
