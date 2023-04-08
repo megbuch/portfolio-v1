@@ -408,6 +408,10 @@ span.fade {
   position: relative;
 }
 
+#contact > .small-wrapper {
+  margin-bottom: 3em;
+}
+
 #contact > .small-wrapper > p {
   font-size: 14px;
 }
@@ -780,6 +784,10 @@ footer > p > a {
 
   .small-wrapper {
     min-width: 92vw;
+  }
+
+  #contact > .small-wrapper > p {
+    font-size: 12px;
   }
 
   #home {
