@@ -1,14 +1,19 @@
 # Meghan Bucher Portfolio 
-### View my portfolio here: <a href="https://meghanbucher.work/">meghanbucher.work</a>
+### <a href="https://meghanbucher.work/">meghanbucher.work</a>
 Welcome to my portfolio, home to all of my favorite projects.<br>
 I opted for a modern, minimalist design, while incorporating some vibrant pops of color.<br>
 
-<b>Technologies Used:</b>
+<b>Sections:</b>
 <ul>
-  <li>JavaScript</li>
-  <li>HTML5</li>
-  <li>CSS3</li>
+  <li>Home</li>
+  <li>Featured Work</li>
+  <li>About</li>
+  <li>Skills</li>
+  <li>Education</li>
+  <li>Contact</li>
 </ul>
+
+<b>Technologies Used:</b> JavaScript, HTML5, + CSS3
 
 <b>Features:</b>
 <ul>
