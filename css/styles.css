@@ -41,16 +41,18 @@ nav {
   z-index: 2;
 }
 
-nav > a {
-  font-size: 28px;
+li > a,
+a {
   font-weight: 600;
-  letter-spacing: -1px;
-  transition: 600ms ease-in-out;
+  text-transform: lowercase;
+  transition: 300ms ease-in-out;
   opacity: 90%;
+  color: #e43d45;
+  text-decoration: none;
 }
 
-nav > a:hover {
-  opacity: 100%;
+a:hover {
+  color: black;
 }
 
 ul {
@@ -72,19 +74,9 @@ ul {
   margin: 1em;
 }
 
-a {
-  text-decoration: none;
-  color: #e43d45;
-  font-weight: 600;
-}
-
-a:hover {
-  color: black;
-}
-
 .btn {
   font: 15px "Nunito Sans", "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   background: #e43d45;
   color: white;
   border: none;
@@ -114,6 +106,7 @@ a:hover {
 
 .explore {
   width: 15em;
+  font-weight: 200;
 }
 
 section {
@@ -230,7 +223,7 @@ span.fade {
 }
 
 #work {
-  margin: 1em 0;
+  margin: 2em 0 0 0;
 }
 
 .project-element {
