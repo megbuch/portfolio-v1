@@ -70,7 +70,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 3rem;
   margin: 1em;
 }
 
@@ -92,7 +92,7 @@ ul {
   margin: 1em auto;
   position: relative;
   top: 0;
-  width: 80%;
+  width: 10em;
 }
 
 .btn:hover {
@@ -127,10 +127,9 @@ section {
 }
 
 .small-wrapper {
-  max-width: 30vw;
+  max-width: 35vw;
   margin: 2em;
-  padding: 2em;
-  /* border: 2px solid #ffffff; */
+  padding: 3em;
   border-radius: 15px;
   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
   background: #ffffff;
@@ -331,12 +330,13 @@ span.fade {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5px;
 }
 
 #headshot {
   max-height: 10em;
   border-radius: 50%;
-  margin: 1em;
+  margin: 0 1em;
 }
 
 #education > p {
@@ -350,7 +350,7 @@ span.fade {
 }
 
 .skills {
-  max-width: 80%;
+  width: 80%;
   margin: 1em 0;
   display: flex;
   align-items: center;
@@ -402,6 +402,10 @@ span.fade {
 .design {
   background: #ffe3fb;
   color: #bb46ab;
+}
+
+.about-me > .row {
+  gap: 2em;
 }
 
 #contact {
@@ -508,7 +512,7 @@ footer > p > a {
 
   .small-wrapper {
     min-width: 40vw;
-    padding: 1em;
+    padding: 2em;
     margin: 0;
   }
 
@@ -552,7 +556,7 @@ footer > p > a {
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1280px) {
   .main-heading {
     font-size: 3.6rem;
   }
@@ -583,6 +587,7 @@ footer > p > a {
 
   .skills-edu {
     flex-direction: row;
+    gap: 1em;
   }
 
   .skills-section {
@@ -595,7 +600,7 @@ footer > p > a {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   nav {
     justify-content: right;
   }
@@ -769,6 +774,10 @@ footer > p > a {
 @media only screen and (max-width: 535px) {
   .small-wrapper > .row {
     flex-direction: column;
+  }
+
+  .about-me > .row {
+    gap: 10px;
   }
 }
 
